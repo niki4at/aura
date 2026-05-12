@@ -125,8 +125,8 @@ export function Hero() {
 
 function HeroComposite() {
   return (
-    <div className="relative aspect-[4/5] w-full max-w-md md:ml-auto">
-      <div className="absolute inset-0 overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-2xl ring-soft">
+    <div className="relative mx-auto w-full max-w-md pb-20 md:ml-auto md:mr-0 lg:pb-24">
+      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-2xl ring-soft">
         <Image
           src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80"
           alt="Soft portrait — natural skin"
@@ -139,10 +139,10 @@ function HeroComposite() {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-        className="floaty absolute -left-4 top-6 w-44 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur sm:-left-12 sm:w-48 lg:-left-20 lg:w-52"
+        initial={{ opacity: 0, x: -20, y: 10 }}
+        animate={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.7 }}
+        className="floaty absolute -left-2 -top-6 z-10 w-52 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur sm:-left-10 sm:w-56 lg:-left-24 lg:-top-4 lg:w-60"
       >
         <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           Today's context
@@ -157,10 +157,10 @@ function HeroComposite() {
       </motion.div>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 0.6 }}
-        className="floaty absolute -right-3 top-[58%] w-48 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur sm:-right-10 sm:w-52 lg:-right-16 lg:w-56"
+        initial={{ opacity: 0, x: 20, y: 10 }}
+        animate={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ delay: 0.75, duration: 0.7 }}
+        className="floaty absolute -right-2 top-[42%] z-10 w-52 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur sm:-right-10 sm:w-56 lg:-right-20 lg:w-60"
         style={{ animationDelay: "1.5s" }}
       >
         <div className="flex items-center justify-between">
@@ -191,8 +191,8 @@ function HeroComposite() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.6 }}
-        className="floaty absolute -bottom-10 left-1/2 w-60 -translate-x-1/2 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur"
+        transition={{ delay: 1, duration: 0.7 }}
+        className="floaty absolute bottom-0 left-1/2 z-10 w-72 -translate-x-1/2 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur"
         style={{ animationDelay: "3s" }}
       >
         <div className="flex items-center justify-between text-xs">
