@@ -142,7 +142,7 @@ function HeroComposite() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
-        className="floaty absolute -left-6 top-12 w-56 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur"
+        className="floaty absolute -left-4 top-6 w-44 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur sm:-left-12 sm:w-48 lg:-left-20 lg:w-52"
       >
         <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
           Today's context
@@ -160,7 +160,7 @@ function HeroComposite() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.6 }}
-        className="floaty absolute -right-4 top-1/2 w-60 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur"
+        className="floaty absolute -right-3 top-[58%] w-48 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur sm:-right-10 sm:w-52 lg:-right-16 lg:w-56"
         style={{ animationDelay: "1.5s" }}
       >
         <div className="flex items-center justify-between">
@@ -171,7 +171,7 @@ function HeroComposite() {
             6 steps
           </span>
         </div>
-        <ol className="mt-3 space-y-1.5 text-xs text-foreground/80">
+        <ol className="mt-3 flex flex-col gap-1.5 text-xs text-foreground/80">
           {[
             "Cetaphil cream cleanse",
             "HA + B5 (you own)",
@@ -192,7 +192,7 @@ function HeroComposite() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="floaty absolute -bottom-2 left-10 w-64 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur"
+        className="floaty absolute -bottom-10 left-1/2 w-60 -translate-x-1/2 rounded-2xl border border-border bg-card/95 p-4 shadow-xl ring-soft backdrop-blur"
         style={{ animationDelay: "3s" }}
       >
         <div className="flex items-center justify-between text-xs">
